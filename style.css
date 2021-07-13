@@ -23,6 +23,9 @@ h2 {
 p {
   font-size: 16px;
 }
+a {
+  text-decoration: none;
+}
 .container {
   max-width: 1040px;
 }
@@ -80,7 +83,7 @@ p {
     top: 0;
   }
   100% {
-    top: 20px;
+    top: 25px;
   }
 }
 
@@ -116,4 +119,34 @@ p {
 .player p {
   font-size: 16px;
   color: #6c6c6c;
+}
+
+/* --------------------------
+        footer style
+----------------------------- */
+footer {
+  padding: 3%;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-img img {
+  width: 483.87px;
+}
+.footer-social-icon a {
+  display: inline-block;
+  margin-right: 20px;
+  width: 45px;
+  font-size: 25px;
+  color: rgb(150, 155, 171);
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgb(231, 231, 232);
+  line-height: 45px;
+}
+.footer-description {
+  margin-top: 20px;
 }
