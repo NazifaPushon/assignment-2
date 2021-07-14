@@ -26,6 +26,9 @@ p {
 a {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 .container {
   max-width: 1040px;
 }
@@ -69,7 +72,6 @@ a {
   position: relative;
   font-size: 64px;
   width: 485px;
-  /* margin-top: 35px; */
   color: white;
 }
 .banner-img {
@@ -92,7 +94,6 @@ a {
         main styles 
 --------------------------*/
 #main-section {
-  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +106,7 @@ a {
   grid-template-columns: repeat(3, 330px);
   grid-column-gap: 30px;
   grid-row-gap: 27px;
+  padding: 5% 0;
 }
 .player-img img {
   width: 300px;
@@ -121,7 +123,49 @@ a {
   font-size: 16px;
   color: #6c6c6c;
 }
-
+/* --------------------------
+          Club Styles
+----------------------------- */
+#club {
+  width: 100%;
+  background-image: linear-gradient(45deg, #0000006b, #000000a3),
+    url(images/club.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.club-container {
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.club-title {
+  font-size: 60px;
+  padding-bottom: 5%;
+}
+.club-description {
+  max-width: 300px;
+  padding: 3%;
+  text-align: center;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  line-height: 50px;
+  position: relative;
+  margin-bottom: 5%;
+}
+.club-description h3 {
+  font-size: 45px;
+  color: #e02c6d;
+  margin-bottom: 15px;
+}
+.club-description ul li {
+  font-size: 20px;
+}
+#club:hover .club-description {
+  animation: banner 1.5s linear infinite alternate running;
+}
 /* --------------------------
         footer style
 ----------------------------- */
@@ -179,6 +223,12 @@ footer {
     grid-template-columns: 330px;
     box-sizing: border-box;
   }
+  .club-container {
+    flex-direction: column;
+  }
+  .club-title {
+    font-size: 36px;
+  }
   .footer-img {
     text-align: center;
   }
@@ -189,3 +239,36 @@ footer {
 /* ------------------------------
         Tab styles
 ---------------------------------*/
+@media only screen and (max-width: 992px) and (min-width: 687px) {
+  #web-header {
+    padding: 5%;
+  }
+  .banner-container {
+    width: 100%;
+    display: flex;
+  }
+
+  .banner-img img {
+    max-width: 300px;
+  }
+  .banner-title {
+    width: 270px;
+    font-size: 36px;
+  }
+  .players {
+    grid-template-columns: 330px 330px;
+    box-sizing: border-box;
+  }
+  .club-container {
+    flex-direction: column;
+  }
+  .club-title {
+    font-size: 36px;
+  }
+  .footer-img {
+    text-align: center;
+  }
+  .footer-img img {
+    width: 80%;
+  }
+}
