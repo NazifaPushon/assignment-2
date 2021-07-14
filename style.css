@@ -29,9 +29,16 @@ a {
 li {
   list-style: none;
 }
-.container {
+.flex-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   max-width: 1040px;
 }
+
+/* .container {
+  max-width: 1040px;
+} */
 .half-width {
   width: 50%;
 }
@@ -125,6 +132,31 @@ li {
 .player p {
   font-size: 16px;
   color: #6c6c6c;
+}
+/* ---------------------------
+      heighlight Styles 
+------------------------------*/
+#hightlights {
+  padding: 5%;
+}
+.highlight-img {
+  text-align: center;
+}
+.highlight-img img {
+  width: 100%;
+}
+.highlight-content {
+  max-width: 470px;
+  padding-right: 5%;
+}
+.highlight-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.highlight-content p {
+  color: #6c6c6c;
+  font-size: 16px;
+  margin-bottom: 24px;
 }
 /* --------------------------
           Club Styles
@@ -235,7 +267,7 @@ section#score-of-copa {
   color: white;
 }
 
-section#score-of-copa h1 {
+#score-of-copa h1 {
   font-size: 50px;
   text-align: center;
   padding-bottom: 50px;
@@ -246,14 +278,14 @@ section#score-of-copa h1 {
   justify-content: center;
   align-items: center;
 }
-#score-of-copa table,
+.table-wrapper table,
 tr,
 th,
 td {
   border-collapse: collapse;
   border: 3px solid white;
 }
-#score-of-copa tr,
+.table-wrapper tr,
 th,
 td {
   width: 350px;
@@ -300,6 +332,9 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .flex-container {
+    flex-direction: column;
+  }
   .half-width {
     width: 100%;
   }
@@ -317,6 +352,12 @@ footer {
     grid-template-columns: 330px;
     box-sizing: border-box;
   }
+  .highlight-content {
+    width: 300px;
+  }
+  .highlight-content h1 {
+    font-size: 30px;
+  }
   .club-container {
     flex-direction: column;
   }
@@ -326,14 +367,17 @@ footer {
   .history-of-copa {
     flex-direction: column;
   }
+  #score-of-copa h1 {
+    font-size: 35px;
+  }
+  .table-wrapper h1 {
+    font-size: 35px;
+  }
   #copa-america:hover .first-copa-img h3 {
     display: block;
     top: 0px;
   }
-  #score-of-copa h1 {
-    font-size: 35px;
-  }
-  #score-of-copa tr,
+  .table-wrapper tr,
   th,
   td {
     width: 100px;
@@ -358,7 +402,12 @@ footer {
     width: 100%;
     display: flex;
   }
-
+  .flex-container {
+    flex-direction: column;
+  }
+  .half-width {
+    width: 100%;
+  }
   .banner-img img {
     max-width: 300px;
   }
@@ -383,10 +432,8 @@ footer {
     display: block;
     top: 0px;
   }
-  #score-of-copa h1 {
-    font-size: 35px;
-  }
-  #score-of-copa tr,
+
+  .table-wrapper tr,
   th,
   td {
     width: 150px;
