@@ -219,7 +219,47 @@ li {
 .history-detail p:first-child {
   margin-bottom: 5%;
 }
+/* --------------------------
+      Score table styles
+----------------------------- */
+section#score-of-copa {
+  width: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  background-image: linear-gradient(45deg, #0000006b, #000000a3),
+    url(images/score-copa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+}
 
+section#score-of-copa h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.table-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#score-of-copa table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  border: 3px solid white;
+}
+#score-of-copa tr,
+th,
+td {
+  width: 350px;
+  height: 70px;
+  font-size: 25px;
+}
 /* --------------------------
         footer style
 ----------------------------- */
@@ -290,6 +330,16 @@ footer {
     display: block;
     top: 0px;
   }
+  #score-of-copa h1 {
+    font-size: 35px;
+  }
+  #score-of-copa tr,
+  th,
+  td {
+    width: 100px;
+    height: 70px;
+    font-size: 20px;
+  }
   .footer-img {
     text-align: center;
   }
@@ -332,6 +382,16 @@ footer {
   #copa-america:hover .first-copa-img h3 {
     display: block;
     top: 0px;
+  }
+  #score-of-copa h1 {
+    font-size: 35px;
+  }
+  #score-of-copa tr,
+  th,
+  td {
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
   }
   .footer-img {
     text-align: center;
