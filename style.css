@@ -77,8 +77,12 @@ li {
   display: flex;
   justify-content: space-between;
 }
+.banner-description {
+  box-sizing: border-box;
+  padding-left: 6%;
+}
 .banner-title {
-  padding: 2%;
+  /* padding: 2%; */
   position: relative;
   font-size: 64px;
   width: 485px;
