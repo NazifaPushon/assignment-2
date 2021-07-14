@@ -37,13 +37,16 @@ li {
 }
 .button {
   width: 168px;
+  color: white;
   height: 44px;
   background-color: #e02c6d;
   border: none;
   font-size: 16px;
-  color: white;
   margin: 15px 0;
   position: relative;
+}
+.button a {
+  color: white;
 }
 .button i {
   padding-left: 5px;
@@ -166,6 +169,57 @@ li {
 #club:hover .club-description {
   animation: banner 1.5s linear infinite alternate running;
 }
+
+/* --------------------------
+        history of copa
+----------------------------- */
+#copa-america {
+  padding: 5%;
+}
+#copa-america h1 {
+  font-size: 45px;
+  text-align: center;
+  color: #e02c6d;
+}
+.history-of-copa {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-copa-img {
+  position: relative;
+  overflow: hidden;
+}
+.first-copa-img img {
+  width: 100%;
+}
+.first-copa-img h3 {
+  position: absolute;
+  top: 0;
+  display: none;
+  text-align: center;
+  font-size: 35px;
+  padding: 2%;
+  background-color: rgb(0 0 0 / 40%);
+  color: white;
+  left: 0;
+}
+#copa-america:hover .first-copa-img h3 {
+  display: block;
+  top: 100px;
+}
+#copa-america:hover .first-copa-img img {
+  transform: scale(1.3);
+  transition: transform 0.5s linear;
+}
+.history-detail {
+  padding: 5%;
+}
+.history-detail p:first-child {
+  margin-bottom: 5%;
+}
+
 /* --------------------------
         footer style
 ----------------------------- */
@@ -229,6 +283,13 @@ footer {
   .club-title {
     font-size: 36px;
   }
+  .history-of-copa {
+    flex-direction: column;
+  }
+  #copa-america:hover .first-copa-img h3 {
+    display: block;
+    top: 0px;
+  }
   .footer-img {
     text-align: center;
   }
@@ -264,6 +325,13 @@ footer {
   }
   .club-title {
     font-size: 36px;
+  }
+  .history-of-copa {
+    flex-direction: column;
+  }
+  #copa-america:hover .first-copa-img h3 {
+    display: block;
+    top: 0px;
   }
   .footer-img {
     text-align: center;
